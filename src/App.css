@@ -13,10 +13,19 @@ html {
 
 .navbar {
   background-color: white;
+  font-family: 'Outfit';
 }
 
 .ncf-logo-navbar {
   width: 60%;
+}
+
+.ncf-logo-navbar:hover {
+  transform: scale(1.2);
+}
+
+.button-navbar:hover{
+  transform: scale(1.2);
 }
 
 /* Start of PageTitle */
