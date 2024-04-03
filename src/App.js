@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/Navbar";
 import PageTitle from "./components/PageTitle";
-// import SearchBar from "./components/SearchBar";
+import Footer from "./components/Footer";
 
 import { SearchBar } from "./components/SearchBar";
 import { SearchResultList } from "./components/SearchResultList";
@@ -23,7 +23,8 @@ function App() {
         <div className="search-bar-container">
         <SearchBar setResults={setResults} />
         {results && results.length > 0 && <SearchResultList results={results} />}
-      </div>
+        </div>
+        <Footer />
       </main>
     </div>
   );

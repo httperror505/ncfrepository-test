@@ -9,6 +9,10 @@ html {
   font: 16px/1.6 "Poppins", sans-serif;
 }
 
+.h3 {
+  font-family: 'Outfit';
+}
+
 /* Start of Navbar */
 
 .navbar {
@@ -22,6 +26,10 @@ html {
 
 .ncf-logo-navbar:hover {
   transform: scale(1.2);
+}
+
+.button-navbar {
+  box-shadow: 0px 0px 10px 5px #ddd;
 }
 
 .button-navbar:hover{
@@ -72,6 +80,10 @@ html {
   align-items: center;
 }
 
+.input-wrapper:hover{
+  transform: scale(1.1);
+}
+
 input {
   background-color: transparent;
   border: none;
@@ -118,4 +130,51 @@ input:focus {
   margin-top: 1rem;
   max-height: 300px;
   overflow-y: auto;
+}
+
+/* Start of Footer */
+
+.footer-block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+  display: grid;
+  justify-content: right;
+  align-items: center;
+}
+
+#footer-icons {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px #ddd;
+}
+
+#footer-icons:hover {
+  transform: scale(1.2);
+}
+
+.modal {
+  font-family: 'Outfit';
+}
+
+.help-center {
+  color: #094D1C;
+}
+
+.equal-width-tabs {
+  flex-grow: 1;
+}
+
+.accordion {
+  font-family: 'Outfit';
+}
+
+.accordion-header {
+  color: #094D1C;
+}
+
+
+.accordion-body {
+  background-color: #efefef;
 }
