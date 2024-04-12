@@ -7,7 +7,7 @@ import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
 
-function NavigationBar() {
+function NavigationBar({ changeTab }) {
   const redirectToNCF = () => {
     window.open("https://www.ncf.edu.ph/");
   };
@@ -64,32 +64,25 @@ function NavigationBar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav.Link className="ms-3">Categories</Nav.Link>
-            <Nav.Link className="ms-3">Upload</Nav.Link>
-            <Nav.Link className="ms-3">Upload</Nav.Link>
-            <Nav.Link className="ms-3">Upload</Nav.Link>
-            <Nav className="ms-auto">
-              {/* Empty div to push login and sign up buttons to the right */}
-              <div className="ms-auto">
-                <Button
-                  variant="success"
-                  className="me-3 button-navbar"
-                  onClick={handleShow}
-                >
-                  Login
-                </Button>
-                <Button
-                  variant="success"
-                  className="button-navbar"
-                  onClick={handleShowSignup}
-                >
-                  Sign Up
-                </Button>
-              </div>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+          <Nav className="ms-3" variant="underline">
+            <Nav.Link onClick={() => changeTab('search')}>Search</Nav.Link>
+            <Nav.Link onClick={() => changeTab('categories')}>Categories</Nav.Link>
+            <Nav.Link onClick={() => changeTab('upload')}>Upload</Nav.Link>
+            {/* Add other Nav links */}
+          </Nav>
+          <Nav className="ms-auto">
+            <div className="ms-auto">
+              <Button variant="success" className="me-3 button-navbar" onClick={handleShow}>
+                Login
+              </Button>
+              <Button variant="success" className="button-navbar" onClick={handleShowSignup}>
+                Sign Up
+              </Button>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
       <Modal
         show={show}

@@ -36,6 +36,11 @@ html {
   transform: scale(1.2);
 }
 
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* Start of PageTitle */
 
 .title-container {
