@@ -18,57 +18,58 @@ export default function Categories () {
                 <FloatingLabel
                     className="mb-3" 
                     controlId="exampleForm.ControlInput1"
-                    label="Email address"
+                    label="Title of the Document"
                 >
                     {/* Document Name */}
-                        <Form.Label>Document Name</Form.Label>
-                        <Form.Control type="title" placeholder="Title of the Document" />
+                        // <Form.Label>Document Name</Form.Label>
+                        <Form.Control type="title"/>
                 </FloatingLabel>
 
                 <FloatingLabel
                     controlId="floatingInput"
-                    label="Email address"
+                    label="Author Name"
                     className="mb-3"
                 >
                     {/* Author */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Author Name</Form.Label>
-                        <Form.Control type="name" placeholder="John Doe" />
+                        // <Form.Label>Author Name</Form.Label>
+                        <Form.Control type="name"/>
                     </Form.Group>
                 </FloatingLabel>
 
                 <FloatingLabel
                     controlId="floatingInput"
-                    label="Email address"
+                    label="Published Date"
                     className="mb-3"
                 >
                     {/* Publish Date */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Published Date</Form.Label>
-                        <Form.Control type="date" placeholder="Title of the Document" />
+                        // <Form.Label>Published Date</Form.Label>
+                        <Form.Control type="date"/>
                     </Form.Group>
                 </FloatingLabel>
 
 
                 <FloatingLabel
                     controlId="floatingInput"
-                    label="Email address"
+                    label="Abstract of the Paper"
                     className="mb-3"
                 >
                     {/* Abstract */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={3} placeholder="Abstract of the Document"/>
+                        // <Form.Label>Example textarea</Form.Label>
+                        <Form.Control as="textarea" rows={3}/>
                     </Form.Group>                  
                 </FloatingLabel>
 
                 <FloatingLabel
                     className="mb-3" 
                     controlId="exampleForm.ControlInput1"
+                    label="Citation Format"
                 >
                     {/* Citation */}
-                        <Form.Label>Citation</Form.Label>
-                        <Form.Control type="abstract" placeholder="Citation of the Document" />
+                        // <Form.Label>Citation</Form.Label>
+                        <Form.Control type="abstract"/>
                 </FloatingLabel>
 
             </Container>
