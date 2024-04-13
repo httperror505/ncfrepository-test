@@ -15,7 +15,7 @@ export default function Categories () {
 
             <Container>
 
-                {/* <FloatingLabel
+                <FloatingLabel
                     className="mb-3" 
                     controlId="exampleForm.ControlInput1"
                     label="Email address"
