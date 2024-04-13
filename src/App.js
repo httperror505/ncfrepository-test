@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from "./components/Navbar";
 import PageTitle from "./components/PageTitle";
@@ -10,6 +11,7 @@ import Footer from "./components/Footer";
 import { SearchBar } from "./components/SearchBar";
 import { SearchResultList } from "./components/SearchResultList";
 import { useState } from "react";
+
 
 
 function App() {
@@ -39,10 +41,14 @@ function App() {
           </>
         )}
         {/* Add other tabs and their corresponding content */}
-        {activeTab === 'categories' && <Categories /> }
+        {activeTab === 'categories' && (
+            <Router>
+                <Categories />
+              </Router>
+          )}
         {activeTab === 'upload' && <Upload />}
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
