@@ -18,11 +18,10 @@ export default function Categories () {
                 <FloatingLabel
                     className="mb-3" 
                     controlId="exampleForm.ControlInput1"
-                    label="Title of the Document"
+                    label="Research Title"
                 >
                     {/* Document Name */}
-                        // <Form.Label>Document Name</Form.Label>
-                        <Form.Control type="title"/>
+                        <Form.Control type="title" placeholder="Title of the Research Paper"/>
                 </FloatingLabel>
 
                 <FloatingLabel
@@ -32,8 +31,7 @@ export default function Categories () {
                 >
                     {/* Author */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        // <Form.Label>Author Name</Form.Label>
-                        <Form.Control type="name"/>
+                        <Form.Control type="name"  placeholder="John Doe"/>
                     </Form.Group>
                 </FloatingLabel>
 
@@ -44,8 +42,7 @@ export default function Categories () {
                 >
                     {/* Publish Date */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        // <Form.Label>Published Date</Form.Label>
-                        <Form.Control type="date"/>
+                        <Form.Control type="date"  placeholder="yyyy-mm-dd"/>
                     </Form.Group>
                 </FloatingLabel>
 
@@ -57,8 +54,7 @@ export default function Categories () {
                 >
                     {/* Abstract */}
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        // <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={3}/>
+                        <Form.Control as="textarea" rows={3}  placeholder="A brief overview of the research paper."/>
                     </Form.Group>                  
                 </FloatingLabel>
 
@@ -68,8 +64,7 @@ export default function Categories () {
                     label="Citation Format"
                 >
                     {/* Citation */}
-                        // <Form.Label>Citation</Form.Label>
-                        <Form.Control type="abstract"/>
+                        <Form.Control type="abstract"  placeholder="APA Citation"/>
                 </FloatingLabel>
 
             </Container>
