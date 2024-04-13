@@ -69,7 +69,7 @@ export default function Categories () {
                     {/* Citation */}
                         <Form.Label>Citation</Form.Label>
                         <Form.Control type="abstract" placeholder="Citation of the Document" />
-                </FloatingLabel> */}
+                </FloatingLabel>
 
             </Container>
             
