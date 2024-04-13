@@ -25,23 +25,23 @@ export default function Categories () {
                 </FloatingLabel>
 
                 <FloatingLabel
-                    controlId="floatingInput"
+                    controlId="floatingName"
                     label="Author Name"
                     className="mb-3"
                 >
                     {/* Author */}
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Group className="mb-3">
                         <Form.Control type="name"  placeholder="John Doe"/>
                     </Form.Group>
                 </FloatingLabel>
 
                 <FloatingLabel
-                    controlId="floatingInput"
+                    controlId="floatingDate"
                     label="Published Date"
                     className="mb-3"
                 >
                     {/* Publish Date */}
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Group className="mb-3">
                         <Form.Control type="date"  placeholder="yyyy-mm-dd"/>
                     </Form.Group>
                 </FloatingLabel>
@@ -53,14 +53,14 @@ export default function Categories () {
                     className="mb-3"
                 >
                     {/* Abstract */}
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Group className="mb-3">
                         <Form.Control as="textarea" rows={3}  placeholder="A brief overview of the research paper."/>
                     </Form.Group>                  
                 </FloatingLabel>
 
                 <FloatingLabel
                     className="mb-3" 
-                    controlId="exampleForm.ControlInput1"
+                    controlId="floatingCitation"
                     label="Citation Format"
                 >
                     {/* Citation */}
