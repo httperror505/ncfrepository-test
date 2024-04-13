@@ -48,7 +48,7 @@ export default function Categories () {
 
 
                 <FloatingLabel
-                    controlId="floatingInput"
+                    controlId="floatingTextarea2"
                     label="Abstract of the Paper"
                     className="mb-3"
                 >
@@ -60,11 +60,11 @@ export default function Categories () {
 
                 <FloatingLabel
                     className="mb-3" 
-                    controlId="floatingCitation"
+                    controlId="floatingTextarea2"
                     label="Citation Format"
                 >
                     {/* Citation */}
-                        <Form.Control type="abstract"  placeholder="APA Citation"/>
+                        <Form.Control as="textarea" type="abstract"  placeholder="APA Citation"/>
                 </FloatingLabel>
 
             </Container>
