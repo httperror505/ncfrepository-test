@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# NCF Research Nexus: An Online Research Repository of Naga College Foundation, Inc.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developers: `John Rey S. Tolosa` `Arnel Almario Jr.`
 
 ## Available Scripts
 
