@@ -14,19 +14,19 @@ export default function Categories () {
         {
           title: "College of Computer Studies",
           color: "",
-          link: "/results/primary",
+          link: "/CCS",
           image: images.find(image => image.includes('ccs'))
         },
         {
           title: "College of Arts and Sciences",
           color: "",
-          link: "/results/secondary",
+          link: "/CAS",
           image: images.find(image => image.includes('cas'))
         },
         {
           title: "College of Teacher Education",
           color: "",
-          link: "/results/secondary",
+          link: "/CTED",
           image: images.find(image => image.includes('cted'))
         },
         {
@@ -50,13 +50,13 @@ export default function Categories () {
         {
           title: "College of Health Sciences",
           color: "",
-          link: "/results/secondary",
+          link: "/CHS",
           image: images.find(image => image.includes('chs'))
         },
         {
           title: "College of Engineering",
           color: "",
-          link: "/results/secondary",
+          link: "/COE",
           image: images.find(image => image.includes('coe'))
         },
         {
@@ -74,35 +74,35 @@ export default function Categories () {
       ];
 
     return (
-        <section id="categories" className="block categories-block">
-            <Container fluid className="categories-container">
-                <div className="title-bar">
-                    <h1 className="title">Categories</h1>
-                </div>
-            </Container>
+      <section id="categories" className="block categories-block">
+      <Container fluid className="categories-container">
+          <div className="title-bar">
+              <h1 className="title">Categories</h1>
+          </div>
+      </Container>
 
-            <Container>
-            <h2 className="category-card-title">Browse by Department</h2>
-            <p></p>
+      <Container>
+      <h2 className="category-card-title">Browse by Department</h2>
+      <p></p>
 
-            <Row xs={1} md={2} lg={5} className="g-2">
-                {cardContent.map((content, idx) => (
-                    <Col key={idx}>
-                    <Link to={content.link} style={{ textDecoration: 'none', color: 'inherit'}}>
-                        <Card border={content.color}>
-                            <Card.Img variant="top"  src={content.image}/>
-                            <Card.Body>
-                                <Card.Title style={{ fontSize: '1.1em', textAlign: 'center' }}>
-                                    {content.title}
-                                </Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </Link>
-                    </Col>
-                ))}
-            </Row>
-                
-            </Container>
-        </section>
-    )
+      <Row xs={1} md={2} lg={5} className="g-2">
+          {cardContent.map((content, idx) => (
+              <Col key={idx}>
+              <Link to={content.link} style={{ textDecoration: 'none', color: 'inherit'}}>
+                  <Card border={content.color}>
+                      <Card.Img variant="top"  src={content.image}/>
+                      <Card.Body>
+                          <Card.Title style={{ fontSize: '1.1em', textAlign: 'center' }}>
+                              {content.title}
+                          </Card.Title>
+                      </Card.Body>
+                  </Card>
+              </Link>
+              </Col>
+          ))}
+      </Row>
+          
+      </Container>
+  </section>
+)
 }
